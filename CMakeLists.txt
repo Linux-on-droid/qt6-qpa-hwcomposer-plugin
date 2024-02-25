@@ -13,10 +13,7 @@ pkg_check_modules(HWC_hwcomposerwindow REQUIRED hwcomposer-egl)
 pkg_check_modules(HWC_hybriseglplatform REQUIRED hybris-egl-platform)
 pkg_check_modules(PKG_sync REQUIRED libsync)
 
-qt_add_plugin(hwcomposer
-                OUTPUT_NAME hwcomposer
-                PLUGIN_TYPE platforms
-
+qt_add_library(hwcomposer MODULE
                 hwcomposer/main.cpp
                 hwcomposer/hwcomposer_context.cpp hwcomposer/hwcomposer_context.h
                 hwcomposer/hwcomposer_screeninfo.cpp hwcomposer/hwcomposer_screeninfo.h
