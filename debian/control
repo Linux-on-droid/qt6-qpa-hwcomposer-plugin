@@ -20,7 +20,8 @@ Build-Depends: pkg-kde-tools,
                libglib2.0-dev,
                libmtdev-dev,
                libwayland-server0,
-               libwayland-dev
+               libwayland-dev,
+               cmake
 Standards-Version: 4.5.1
 
 Package: qt6-qpa-hwcomposer-plugin
